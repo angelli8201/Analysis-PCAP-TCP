@@ -1,0 +1,14 @@
+Angel Li 112784616
+CSE 310 Programming Assignment2
+
+High level summary
+
+PartA:
+a)For part A.a, I found the source port, source IP, destination port, and destination IP by looking into every packet's ethernet frame data. I looked at the 3 source ports and ack flags. From there, I was able to get the information I provided
+b)For part A.b, I provided the first two transactions after the TCP connection was set up. I used a counter and distinguished the transactions based on the flags of the packets and the ports of each packet.
+c)For part A.c, I provided the sender throughout by keeping count of the total amount of bytes sent from the sender at each port. I also kept count of the time of receiving each acknowledgement. From there, I found sender throughput by dividing the total amount of bytes by the time period of the last acknowledgement subtracted by the time period of the first bytes received.
+
+
+PartB:
+1)For part B.1, I printed the first 3 congestion windows. I found the congestion windows by calculating RTT for each port and seeing how many packets were sent in each RTT's worth of time.
+2)For part B.2, I found the number of times a retransmission occurred due to triple duplicate ack and the number of times a retransmission occurred due to timeout. For triple duplicate ack, I looked into each port's acknowledgement numbers. For retransmission due to timeout, I looked into the rate of transmission of each packet and comparing it to 2 times the RTT for each port.

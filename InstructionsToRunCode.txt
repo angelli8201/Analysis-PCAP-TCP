@@ -1,0 +1,5 @@
+Angel Li 112784616 
+CSE 310 Programming Assignment 2
+
+How to run analysis_pcap_tcp.py:
+The code can be run without taking in any additional arguments. The pcap file should be able to opened in the python code. In the code, I passed in the parameter “assignment2.pcap” in order to open the provided pcap file. If this code is used to open another pcap file, changes will be need to be made to the port numbers. I got the port numbers that I used in my code from the output of srcports and dstports. Changes will also be needed if another pcap file is used, in line 29 where the name of the pcap file should go.
